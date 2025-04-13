@@ -145,9 +145,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #AUTH_USER_MODEL = 'user.customuser'
 
-CORS_ALLOW_ALL_ORIGINS = True  # Allows all domains
+#CORS_ALLOW_ALL_ORIGINS = True  # Allows all domains
 
+CORS_ALLOW_ALL_ORIGINS = False
 
+CORS_ALLOWED_ORIGINS = [
+    'https://plates4-all.vercel.app',
+]
 
 #REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
