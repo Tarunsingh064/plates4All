@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-g2#p7#6mnxf0ro6ideit&bp=i+5(fjsf5(26sl1&k^4vd0tm(8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['plates4all-7.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['plates4all-8.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
