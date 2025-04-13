@@ -16,7 +16,7 @@ function Login() {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://plates4all-8.onrender.com/api/user/login/', {
+      const response = await fetch('https://plates4all-8.onrender.com/api/user/login/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

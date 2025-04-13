@@ -15,7 +15,7 @@ function Signup() {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://plates4all-8.onrender.com/api/user/register/", {
+      const response = await fetch("https://plates4all-8.onrender.com/api/user/register/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

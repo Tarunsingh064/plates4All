@@ -32,7 +32,7 @@ const FindFood = () => {
       setLoading(true);
       setError(null);
       
-      const response = await fetch('http://plates4all-8.onrender.com/api/food/foods/', {
+      const response = await fetch('https://plates4all-8.onrender.com/api/food/foods/', {
         headers: getAuthHeaders()
       });
 
@@ -93,7 +93,7 @@ const FindFood = () => {
   // Submit edited food
   const handleEditSubmit = async (foodId) => {
     try {
-      const response = await fetch(`http://plates4all-8.onrender.com/api/food/foods/${foodId}/`, {
+      const response = await fetch(`https://plates4all-8.onrender.com/api/food/foods/${foodId}/`, {
         method: 'PUT',
         headers: getAuthHeaders(),
         body: JSON.stringify(editForm)
@@ -130,7 +130,7 @@ const FindFood = () => {
     if (!window.confirm('Are you sure you want to delete this food post?')) return;
     
     try {
-      const response = await fetch(`http://plates4all-8.onrender.com/api/food/foods/${foodId}/`, {
+      const response = await fetch(`https://plates4all-8.onrender.com/api/food/foods/${foodId}/`, {
         method: 'DELETE',
         headers: getAuthHeaders()
       });
