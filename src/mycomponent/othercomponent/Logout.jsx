@@ -22,7 +22,7 @@ function Logout() {
           }
         };
         
-        await axios.post('http://127.0.0.1:8000/api/user/logout/', null, config);
+        await axios.post('http://plates4all-8.onrender.com/api/user/logout/', null, config);
       }
       
       localStorage.removeItem('access');

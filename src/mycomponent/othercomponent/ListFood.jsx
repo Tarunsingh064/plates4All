@@ -18,7 +18,7 @@ function ListFood() {
     formData.append("photo", photo);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/food/foods/", {
+      const response = await fetch("http://plates4all-8.onrender.com/api/food/foods/", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access")}`,
