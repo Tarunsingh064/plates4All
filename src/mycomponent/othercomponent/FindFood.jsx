@@ -93,7 +93,7 @@ const FindFood = () => {
   // Submit edited food
   const handleEditSubmit = async (foodId) => {
     try {
-      const response = await fetch(`https://plates4all-8.onrender.com/api/food/foods/${foodId}/`, {
+      const response = await fetch(`http://plates4all-8.onrender.com/api/food/foods/${foodId}/`, {
         method: 'PUT',
         headers: getAuthHeaders(),
         body: JSON.stringify(editForm)
